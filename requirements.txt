@@ -1,8 +1,8 @@
 streamlit
 pandas
 numpy
-matplotlib
 seaborn
-imblearn
-scikit-learn
+matplotlib
 xgboost
+scikit-learn
+imblearn
