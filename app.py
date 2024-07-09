@@ -73,10 +73,10 @@ def main():
     restecg = st.selectbox("Hasil Elektrokardiografi saat istirahat (restecg)", options=[0, 1, 2])
     thalach = st.number_input("Detak jantung maksimum (thalach)", min_value=0, max_value=250, value=150)
     exang = st.selectbox("Induksi Angina oleh olahraga (exang)", options=[0, 1])
-    oldpeak = st.number_input("ST Depression Induced by Exercise (oldpeak)", min_value=0.0, max_value=10.0, value=1.0, step=0.1)
-    slope = st.selectbox("Slope of the Peak Exercise ST Segment (slope)", options=[0, 1, 2])
-    ca = st.number_input("Number of Major Vessels Colored by Fluoroscopy (ca)", min_value=0, max_value=4, value=0)
-    thal = st.selectbox("Thalassemia (thal)", options=[1, 2, 3])
+    oldpeak = st.number_input("Induksi Depresi ST oleh olahraga (oldpeak)", min_value=0.0, max_value=10.0, value=1.0, step=0.1)
+    slope = st.selectbox("Kemiringan ST Puncak saat olahraga (slope)", options=[0, 1, 2])
+    ca = st.number_input("Pembuluh darah yang diwarnai Fluoroskopi (ca)", min_value=0, max_value=4, value=0)
+    thal = st.selectbox("Kondisi Talasemia (thal)", options=[1, 2, 3])
     
     input_data = [age, sex, cp, trestbps, chol, fbs, restecg, thalach, exang, oldpeak, slope, ca, thal]
     
