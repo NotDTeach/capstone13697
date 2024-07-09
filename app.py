@@ -65,7 +65,7 @@ def main():
     
     st.write("### Input Attributes")
     age = st.number_input("Age", min_value=0, max_value=120, value=25)
-    sex = st.selectbox("Sex (1 = male, 0 = female"), options=[0, 1])
+    sex = st.selectbox("Sex (1 = male, 0 = female)", options=[0, 1])
     cp = st.selectbox("Chest Pain Type (cp)", options=[0, 1, 2, 3])
     trestbps = st.number_input("Resting Blood Pressure (trestbps)", min_value=0, max_value=300, value=120)
     chol = st.number_input("Serum Cholesterol (chol)", min_value=0, max_value=600, value=200)
