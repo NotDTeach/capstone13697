@@ -64,8 +64,8 @@ def main():
     scaler, knn, xgb_model = train_models(df)
     
     st.write("### Input Attributes")
-    age = st.number_input("Usia", min_value=0, max_value=120, value=25)
-    sex = st.selectbox("Jenis Kelamin (1-laki-laki 0-perempuan)", options=[0, 1])
+    age = st.number_input("Usia (age)", min_value=0, max_value=120, value=25)
+    sex = st.selectbox("Jenis Kelamin (sex) (1-laki-laki 0-perempuan)", options=[0, 1])
     cp = st.selectbox("Tipe nyeri dada (cp)", options=[0, 1, 2, 3])
     trestbps = st.number_input("Tekanan darah saat ini (trestbps)", min_value=0, max_value=300, value=120)
     chol = st.number_input("Kolesterol (chol)", min_value=0, max_value=600, value=200)
